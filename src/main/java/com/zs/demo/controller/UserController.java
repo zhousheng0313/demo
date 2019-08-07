@@ -21,6 +21,7 @@ public class UserController {
     @GetMapping("/findAll")
     public List findAll(){
         List<User> users = userRepository.findAll();
+        log.info("users:{}",users);
         ServerResponse<List<User>> response = ServerResponse.createBySuccess(users);
         List<User> data = response.getData();
         return data;
