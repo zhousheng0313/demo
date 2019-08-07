@@ -22,7 +22,6 @@ public class UserController {
     public List findAll(){
         List<User> users = userRepository.findAll();
         ServerResponse<List<User>> response = ServerResponse.createBySuccess(users);
-        int i = 1/0;
         List<User> data = response.getData();
         return data;
     }

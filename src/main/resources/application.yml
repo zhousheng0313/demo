@@ -17,3 +17,13 @@ spring:
       connection-test-query: SELECT 1
   jpa:
     show-sql: true
+  freemarker:
+    template-loader-path: classpath:/templates
+    cache: false
+    charset: UTF-8
+    check-template-location: true
+    content-type: text/html
+    expose-request-attributes: true
+    expose-session-attributes: true
+    request-context-attribute: request
+    suffix: .ftl
