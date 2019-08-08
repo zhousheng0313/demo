@@ -1,10 +1,10 @@
 spring:
-  #hikari\u6570\u636E\u6E90\u914D\u7F6E
+  #hikari数据库配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/mmall_test?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
-    password: root
+    password: ENC(JOAA6K6khP9jDBEC+TX52g==)
     type: com.zaxxer.hikari.HikariDataSource
     hikari:
       minimum-idle: 5
@@ -31,3 +31,8 @@ spring:
 logging:
   config: classpath:logback-spring.xml
   path: D:/nmyslog/nmys
+
+#数据库密码加密盐值
+jasypt:
+  encryptor:
+    password: hdljdylzsx
