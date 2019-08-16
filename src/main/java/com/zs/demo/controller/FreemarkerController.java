@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class FreemarkerController {
 
     @RequestMapping(value = "/index")
-    public String index(ModelMap map){
+    public String index(ModelMap map) {
         User user = new User();
         user.setUsername("周晟");
         user.setPassword("");
         user.setEmail("zhousheng1993@outlook.com");
-        map.addAttribute("user",user);
+        map.addAttribute("user", user);
 //        model.addAttribute("user",user);
         return "freemarker/index";
     }

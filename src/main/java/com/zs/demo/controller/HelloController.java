@@ -10,9 +10,9 @@ public class HelloController {
 
     @RequestMapping(value = "/hello")
     @ResponseBody
-    public Object hello(){
+    public Object hello() {
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("hello","hello");
+        modelAndView.addObject("hello", "hello");
         modelAndView.setViewName("freemarker/index");
         return modelAndView;
     }

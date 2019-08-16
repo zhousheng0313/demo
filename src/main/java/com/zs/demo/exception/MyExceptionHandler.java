@@ -9,7 +9,7 @@ public class MyExceptionHandler {
 
     @ExceptionHandler(value = Exception.class)
     @ResponseBody
-    public String exceptionHandler(){
+    public String exceptionHandler() {
         return "异常处理";
     }
 }
