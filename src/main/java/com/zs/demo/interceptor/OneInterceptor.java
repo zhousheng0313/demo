@@ -23,6 +23,7 @@ public class OneInterceptor implements HandlerInterceptor {
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
         System.out.println("OneInterceptor的postHandle方法执行");
         modelAndView.addObject("OneInterceptor", "OneInterceptor");
+//        modelAndView.addObject("OneInterceptor","OneInterceptor");
     }
 
     //该方法在handler方法执行完之后执行
